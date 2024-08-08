@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+html {
+  background-color: #e2eaf5;
+}
+
+body {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-container {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-container > img {
+  margin-right: 20px;
+}
+
+/*--------------showcase----------------------*/
+
+.showcase-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 60px;
+}
+
+.showcase-container .showcase-text > h2:first-child {
+  font-size: 3.125rem;
+  font-weight: 700;
+  color: #2a394f;
+}
+
+.showcase-container .showcase-text > h2:last-child {
+  font-size: 5.125rem;
+  font-weight: 700;
+  color: #2a394f;
+}
+
+.showcase-container .showcase-text > p {
+  font-weight: 500;
+  margin-bottom: 500;
+  color: #9aa0ab;
+}
+
+/* -------------Utilidades -------------------------*/
+
+.custom-input {
+  border: none;
+  border-radius: 15px;
+  background-color: #fdfffe;
+  color: #232323;
+  padding: 16px;
+  width: 100%;
+}
+
+.custom-input:focus {
+  outline: 2px solid #3aa2ff;
+}
+
+.custom-input::placeholder {
+  color: #b1b8c0;
+}
