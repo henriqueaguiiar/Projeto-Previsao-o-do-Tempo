@@ -94,6 +94,55 @@ body {
   font-weight: 700;
   font-size: 2rem;
 }
+/* -------------Detalhes -------------------------*/
+
+.weather-detail-container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  grid-column-gap: 15px;
+}
+
+.weather-detail-container .wether-detail-item {
+  background: #fff;
+  border-radius: 40px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.weather-detail-container .wether-detail-item:hover {
+  background: #9dccf5;
+}
+
+.weather-detail-container .wether-detail-item > p:first-child {
+  color: #8f8f8f;
+}
+
+.weather-detail-container .wether-detail-item > div {
+  display: flex;
+  align-items: center;
+}
+.weather-detail-container .wether-detail-item > div > p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2a394f;
+  margin-left: 4px;
+}
+
+.weather-detail-container .wether-detail-item > div > p > span {
+  font-size: 0.75rem;
+  margin-left: -5px;
+}
+
+.weather-detail-container .wether-detail-item > div > img {
+  width: 35px;
+  height: 35px;
+}
+
 /* -------------Utilidades -------------------------*/
 
 .custom-input {
