@@ -19,6 +19,7 @@ body {
   padding: 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 100px;
 }
 
 .navbar-container {
@@ -115,7 +116,7 @@ body {
 }
 
 .weather-detail-container .wether-detail-item:hover {
-  background: #9dccf5;
+  background: #e8f0f7;
 }
 
 .weather-detail-container .wether-detail-item > p:first-child {
@@ -141,6 +142,54 @@ body {
 .weather-detail-container .wether-detail-item > div > img {
   width: 35px;
   height: 35px;
+}
+
+/*---------------------Previsão Semanal ---------------------------------------*/
+
+.weakly-forecast-container {
+  background: #fff;
+  border-radius: 40px;
+  padding: 40px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.weakly-forecast-container .weather-day-item {
+  display: flex;
+  align-items: center;
+}
+
+.weakly-forecast-container .weather-day-item > p,
+.weakly-forecast-container .weather-day-item > img,
+.weakly-forecast-container .weather-day-item > div {
+  flex: 1;
+}
+.weakly-forecast-container .weather-day-item > p {
+  font-weight: 500;
+  color: #8f8f8f;
+}
+
+.weakly-forecast-container .weather-day-item > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.weakly-forecast-container .weather-day-item > div > p:first-child {
+  color: #2a394f;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.weakly-forecast-container .weather-day-item > div > p:last-child {
+  color: #8f8f8f;
+  font-weight: 500;
+}
+
+.weakly-forecast-container .weather-day-item > img {
+  width: 60px;
+  height: 60px;
 }
 
 /* -------------Utilidades -------------------------*/
