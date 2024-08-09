@@ -1,212 +1,171 @@
+/* Define estilos globais para todos os elementos */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "poppins", sans-serif;
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove espaçamento interno padrão */
+  box-sizing: border-box; /* Inclui bordas e preenchimento no cálculo do tamanho total do elemento */
+  font-family: "poppins", sans-serif; /* Define a fonte "Poppins" como padrão */
 }
 
+/* Estiliza o elemento <html> */
 html {
-  background-color: #e2eaf5;
+  background-color: #e2eaf5; /* Define a cor de fundo da página */
 }
 
+/* Estiliza o elemento <body> */
 body {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1440px; /* Limita a largura máxima da página */
+  margin-left: auto; /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
 }
 
+/* Contêiner principal da aplicação */
 .app-container {
-  padding: 40px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 100px;
+  padding: 40px; /* Espaçamento interno em todos os lados */
+  display: grid; /* Define um layout em grid */
+  grid-template-columns: repeat(2, 1fr); /* Cria duas colunas de tamanho igual */
+  grid-column-gap: 100px; /* Espaçamento de 100px entre as colunas */
 }
 
+/* Estiliza o contêiner da barra de navegação */
 .navbar-container {
-  display: flex;
-  align-items: center;
+  display: flex; /* Layout em flexbox */
+  align-items: center; /* Alinha verticalmente ao centro */
 }
 
+/* Adiciona margem ao lado direito da imagem no navbar */
 .navbar-container > img {
-  margin-right: 20px;
+  margin-right: 20px; /* Espaçamento de 20px à direita da imagem */
 }
 
 /*--------------showcase----------------------*/
-
+/* Estiliza o contêiner da vitrine de informações */
 .showcase-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-top: 60px;
+  display: flex; /* Layout em flexbox */
+  align-items: center; /* Alinha verticalmente ao centro */
+  justify-content: space-between; /* Espaça os itens igualmente */
+  padding-left: 40px; /* Espaçamento interno à esquerda */
+  padding-right: 40px; /* Espaçamento interno à direita */
+  margin-top: 60px; /* Margem superior de 60px */
 }
 
+/* Estiliza o primeiro <h2> dentro do showcase-text */
 .showcase-container .showcase-text > h2:first-child {
-  font-size: 3.125rem;
-  font-weight: 700;
-  color: #2a394f;
+  font-size: 3.125rem; /* Tamanho da fonte */
+  font-weight: 700; /* Espessura da fonte */
+  color: #2a394f; /* Cor do texto */
 }
 
+/* Estiliza o último <h2> dentro do showcase-text */
 .showcase-container .showcase-text > h2:last-child {
-  font-size: 5.125rem;
-  font-weight: 700;
-  color: #2a394f;
+  font-size: 5.125rem; /* Tamanho maior da fonte */
+  font-weight: 700; /* Espessura da fonte */
+  color: #2a394f; /* Cor do texto */
 }
 
+/* Estiliza o parágrafo dentro do showcase-text */
 .showcase-container .showcase-text > p {
-  font-weight: 500;
-  margin-bottom: 500;
-  color: #9aa0ab;
+  font-weight: 500; /* Espessura da fonte */
+  margin-bottom: 500; /* Margem inferior */
+  color: #9aa0ab; /* Cor do texto */
 }
 
 /*----Previsão por Hora  -------- */
+/* Contêiner para a previsão horária do clima */
 .hourly-forecast-container {
-  border-radius: 40px;
-  padding: 40px;
-  background: linear-gradient(90.28deg, #007dfe 0.22%, #3aa2ff 99.76%);
-  box-shadow: 0px 30px 50px -19px rgba(1, 126, 254, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  border-radius: 40px; /* Bordas arredondadas */
+  padding: 40px; /* Espaçamento interno */
+  background: linear-gradient(90.28deg, #007dfe 0.22%, #3aa2ff 99.76%); /* Gradiente de fundo */
+  box-shadow: 0px 30px 50px -19px rgba(1, 126, 254, 0.5); /* Sombra externa */
+  display: flex; /* Layout em flexbox */
+  align-items: center; /* Alinha verticalmente ao centro */
+  justify-content: space-between; /* Espaça os itens igualmente */
 }
 
+/* Estiliza cada item de previsão por hora */
 .hourly-forecast-container .hour-weather-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* Layout em flexbox */
+  flex-direction: column; /* Alinha itens em coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
 }
 
+/* Estiliza as imagens dentro dos itens de previsão por hora */
 .hourly-forecast-container .hour-weather-item > img {
-  width: 70px;
-  height: 70px;
-  margin-bottom: 10px;
+  width: 70px; /* Largura da imagem */
+  height: 70px; /* Altura da imagem */
+  margin-bottom: 10px; /* Espaçamento inferior */
 }
 
+/* Estiliza o primeiro parágrafo dentro dos itens de previsão por hora */
 .hourly-forecast-container .hour-weather-item > p:first-child {
-  color: #fff;
-  opacity: 75%;
-  font-weight: 500;
+  color: #fff; /* Cor do texto branca */
+  opacity: 75%; /* Transparência do texto */
+  font-weight: 500; /* Espessura da fonte */
 }
 
+/* Estiliza o último parágrafo dentro dos itens de previsão por hora */
 .hourly-forecast-container .hour-weather-item > p:last-child {
-  color: #fff;
-  font-weight: 700;
-  font-size: 2rem;
+  color: #fff; /* Cor do texto branca */
+  font-weight: 700; /* Espessura da fonte */
+  font-size: 2rem; /* Tamanho da fonte */
 }
+
 /* -------------Detalhes -------------------------*/
-
+/* Contêiner para detalhes adicionais do clima */
 .weather-detail-container {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(4, 220px);
-  grid-column-gap: 15px;
+  margin-top: 40px; /* Margem superior */
+  display: grid; /* Layout em grid */
+  grid-template-columns: repeat(4, 220px); /* Quatro colunas de 220px cada */
+  grid-column-gap: 15px; /* Espaçamento entre as colunas */
 }
 
+/* Estiliza cada item de detalhe do clima */
 .weather-detail-container .wether-detail-item {
-  background: #fff;
-  border-radius: 40px;
-  padding: 30px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  background: #fff; /* Fundo branco */
+  border-radius: 40px; /* Bordas arredondadas */
+  padding: 30px; /* Espaçamento interno */
+  display: flex; /* Layout em flexbox */
+  align-items: center; /* Alinha verticalmente ao centro */
+  flex-direction: column; /* Alinha itens em coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  text-align: center; /* Centraliza o texto */
 }
 
+/* Altera o fundo do item de detalhe ao passar o mouse */
 .weather-detail-container .wether-detail-item:hover {
-  background: #e8f0f7;
+  background: #e8eff5; /* Cor de fundo ao passar o mouse */
 }
 
+/* Estiliza o primeiro parágrafo dentro dos itens de detalhe */
 .weather-detail-container .wether-detail-item > p:first-child {
-  color: #8f8f8f;
+  color: #8f8f8f; /* Cor do texto */
 }
 
+/* Estiliza o contêiner interno dos itens de detalhe */
 .weather-detail-container .wether-detail-item > div {
-  display: flex;
-  align-items: center;
+  display: flex; /* Layout em flexbox */
+  align-items: center; /* Alinha verticalmente ao centro */
 }
+
+/* Estiliza o parágrafo dentro do contêiner dos itens de detalhe */
 .weather-detail-container .wether-detail-item > div > p {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #2a394f;
-  margin-left: 4px;
+  font-size: 2.5rem; /* Tamanho da fonte */
+  font-weight: 700; /* Espessura da fonte */
+  color: #2a394f; /* Cor do texto */
+  margin-left: 4px; /* Margem à esquerda */
 }
 
+/* Estiliza o <span> dentro do parágrafo dos itens de detalhe */
 .weather-detail-container .wether-detail-item > div > p > span {
-  font-size: 0.75rem;
-  margin-left: -5px;
+  font-size: 0.75rem; /* Tamanho da fonte */
+  margin-left: -5px; /* Margem à esquerda negativa */
 }
 
+/* Estiliza as imagens dentro dos itens de detalhe */
 .weather-detail-container .wether-detail-item > div > img {
-  width: 35px;
-  height: 35px;
+  width: 35px; /* Largura da imagem */
+  height: 35px; /* Altura da imagem */
 }
 
 /*---------------------Previsão Semanal ---------------------------------------*/
-
-.weakly-forecast-container {
-  background: #fff;
-  border-radius: 40px;
-  padding: 40px;
-  gap: 30px;
-  display: flex;
-  flex-direction: column;
-}
-
-.weakly-forecast-container .weather-day-item {
-  display: flex;
-  align-items: center;
-}
-
-.weakly-forecast-container .weather-day-item > p,
-.weakly-forecast-container .weather-day-item > img,
-.weakly-forecast-container .weather-day-item > div {
-  flex: 1;
-}
-.weakly-forecast-container .weather-day-item > p {
-  font-weight: 500;
-  color: #8f8f8f;
-}
-
-.weakly-forecast-container .weather-day-item > div {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.weakly-forecast-container .weather-day-item > div > p:first-child {
-  color: #2a394f;
-  font-weight: 500;
-  margin-right: 8px;
-}
-
-.weakly-forecast-container .weather-day-item > div > p:last-child {
-  color: #8f8f8f;
-  font-weight: 500;
-}
-
-.weakly-forecast-container .weather-day-item > img {
-  width: 60px;
-  height: 60px;
-}
-
-/* -------------Utilidades -------------------------*/
-
-.custom-input {
-  border: none;
-  border-radius: 15px;
-  background-color: #fdfffe;
-  color: #232323;
-  padding: 16px;
-  width: 100%;
-}
-
-.custom-input:focus {
-  outline: 2px solid #3aa2ff;
-}
-
-.custom-input::placeholder {
-  color: #b1b8c0;
-}
+/* Contêine

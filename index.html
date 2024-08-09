@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html>
+  <!-- Define o tipo do documento como HTML5 -->
   <head>
     <title>Clima Hoje</title>
+    <!-- Define o título da página que aparece na aba do navegador -->
     <link rel="stylesheet" href="./styles.css" />
+    <!-- Inclui o arquivo CSS externo para estilizar a página -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Otimiza a conexão com os servidores de fontes externas -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- Inclui a fonte "Poppins" do Google Fonts -->
   </head>
   <body>
+    <!-- Contém todo o conteúdo visual da página -->
     <div class="app-container">
+      <!-- Contêiner principal da aplicação -->
       <div class="left-column">
+        <!-- Coluna esquerda da página -->
         <nav class="navbar-container">
+          <!-- Contêiner do menu de navegação -->
           <img src="./images/logo (1).svg" alt="Clima Hoje" />
+          <!-- Exibe o logotipo do site -->
           <input
             class="custom-input"
             type="text"
@@ -22,17 +32,22 @@
             id="city"
             placeholder="Procure por Cidades"
           />
+          <!-- Campo de entrada de texto para buscar cidades -->
         </nav>
         <div class="showcase-container">
+          <!-- Contêiner que mostra as principais informações do clima atual -->
           <div class="showcase-text">
+            <!-- Contém o texto com o nome da cidade, a chance de chuva e a temperatura -->
             <h2>Belo Horizonte</h2>
             <p>Chance de chuva 0%</p>
             <h2>19º C</h2>
           </div>
           <img src="./images/sun-clouds.svg" alt="Sol com poucas nuvens" />
+          <!-- Exibe um ícone relacionado ao clima -->
         </div>
 
         <div class="hourly-forecast-container">
+          <!-- Contêiner para a previsão horária do clima -->
           <div class="hour-weather-item">
             <p>6:00 AM</p>
             <img
@@ -41,7 +56,7 @@
             />
             <p>24º</p>
           </div>
-
+          <!-- Repetição para outros horários com hora, ícone do clima e temperatura -->
           <div class="hour-weather-item">
             <p>09:00 AM</p>
             <img
@@ -73,6 +88,7 @@
         </div>
 
         <div class="weather-detail-container">
+          <!-- Contêiner para detalhes adicionais do clima -->
           <div class="wether-detail-item">
             <p>Sensação Termica</p>
             <div>
@@ -80,7 +96,7 @@
               <p>30º</p>
             </div>
           </div>
-
+          <!-- Repetição para outros detalhes do clima, como sensação térmica, chance de chuva, etc. -->
           <div class="wether-detail-item">
             <p>Chance de Chuva</p>
             <div>
@@ -106,8 +122,11 @@
           </div>
         </div>
       </div>
+
       <div class="Rigth-column">
+        <!-- Coluna direita da página -->
         <div class="weakly-forecast-container">
+          <!-- Contêiner para a previsão semanal -->
           <div class="weather-day-item">
             <p>Segunda</p>
             <img src="./images/rain-2.svg" alt="sol e nuvens" />
@@ -116,7 +135,7 @@
               <p>23º</p>
             </div>
           </div>
-
+          <!-- Repetição para outros dias da semana com dia, ícone do clima, e temperaturas máxima e mínima -->
           <div class="weather-day-item">
             <p>Terça</p>
             <img src="./images/sun.svg" alt="sol" />
@@ -173,5 +192,6 @@
         </div>
       </div>
     </div>
+    <!-- Fecha o contêiner principal, o corpo da página e o documento HTML -->
   </body>
 </html>
